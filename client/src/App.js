@@ -12,8 +12,8 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-const socket = io();
-
+// const socket = io();
+const socket = io("http://localhost:3001");
 function App() {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
@@ -163,7 +163,7 @@ function App() {
                   {messages.map((message, index) => (
                     <li
                       key={index}
-                      className={`my-2 p-2 table text-sm rounded-md ${
+                      className={`my-2 p-2 table text-sm rounded-md mr-2 ${
                         message.from === "Me"
                           ? "bg-lime-700 ml-auto"
                           : "bg-cyan-500"
