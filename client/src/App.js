@@ -12,8 +12,8 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-// const socket = io();
-const socket = io("http://localhost:3001");
+const socket = io();
+
 function App() {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
