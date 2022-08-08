@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 .mp4
+/src/assets/bck.mp4
+
+
 
 # testing
 /coverage
