@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-.mp4
+client/src/assets/bck.mp4
 
 
 
